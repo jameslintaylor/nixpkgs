@@ -287,6 +287,18 @@ let
 
   icicles = callPackage ../applications/editors/emacs-modes/icicles { };
 
+  bookmark-plus = callPackage ../applications/editors/emacs-modes/bookmark-plus { };
+
+  dired-plus = callPackage ../applications/editors/emacs-modes/dired-plus { };
+
+  mb-depth-plus = callPackage ../applications/editors/emacs-modes/mb-depth-plus { };
+    
+  zones = callPackage ../applications/editors/emacs-modes/zones { };
+
+  sunrise-commander = callPackage ../applications/editors/emacs-modes/sunrise-commander { };
+  sunrise-x-popviewer = callPackage ../applications/editors/emacs-modes/sunrise-x-popviewer { };
+  sunrise-x-modeline = callPackage ../applications/editors/emacs-modes/sunrise-x-modeline { };
+  
   redshank = callPackage ../applications/editors/emacs-modes/redshank { };
 
   rtags = melpaBuild rec {
