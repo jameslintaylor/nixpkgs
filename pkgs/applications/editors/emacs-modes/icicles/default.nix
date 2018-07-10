@@ -3,8 +3,8 @@
 let
   modules = [
     { name = "icicles.el"; sha256 = "0wxak7wh0rrb3h77ay2vypbb53skcfbrv71xkajhax0w12q6zpaj"; }
-    { name = "icicles-chg.el"; sha256 = "0xaj8ya6im34f0hjia78wvk5m5s9wm8x30hk5x85pjl2pnwdb87p"; }
-    { name = "icicles-cmd1.el"; sha256 = "17cpw798bl6p77cmjl7lwdnxa1qpw4z1wacjq2mdc8fh81cyw3am"; }
+    { name = "icicles-chg.el"; sha256 = "0qavq9vy566l3qi9n8akrqjcgy8n6k0j8d7vsc7p1jhqvvq812gh"; }
+    { name = "icicles-cmd1.el"; sha256 = "0lgk6ngl9090iqvvw1c227q7p37mr73cc6ap3ky6b0nv3ql8rkyi"; }
     { name = "icicles-cmd2.el"; sha256 = "15swxk7fr7wsqpf26xzbvyk12ikkvfcyh9w8wmnpc38dmpyq79rb"; }
     { name = "icicles-doc1.el"; sha256 = "04j5qvj7pqnjh8h2y2sdgi7x55czdp9xn7yysr3bzcmr1rq5p4bz"; }
     { name = "icicles-doc2.el"; sha256 = "1k8vfhi3fa4bzsxr074bw5q6srvq6z6hi61rzlxdw7pah6qf7hcz"; }
@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   version = "2018-04-16";
   name = "icicles-${version}";
 
-  srcs = forAll ({name, sha256}: fetchurl { url = "http://www.emacswiki.org/emacs/download/${name}"; inherit sha256; });
+  srcs = forAll ({name, sha256}: fetchurl { url = "https://www.emacswiki.org/emacs/download/${name}"; inherit sha256; });
 
   buildInputs = [ emacs ];
 
